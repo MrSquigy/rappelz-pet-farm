@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rappelz Pet Farm Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <h1>Pet Farm Calculator</h1>
+        <form id="petDetails">
+            <table>
+                <tr>
+                    <td><label for="startLvl">Start Level</label><br><br>
+                        <input type="number" id="startLvl" min=1 max=210></td>
+                    <td><label for="endLvl">End Level</label><br><br>
+                        <input type="number" id="endLvl" min=1 max=210></td>
+                    <td><label for="stage">Stage</label><br><br>
+                        <select class="cool-select" id="stage">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="premium"><label for="premium">Use premium passes?</label></td>
+                    <td><input type="checkbox" id="cracker"><label for="cracker">Use cracker?</label></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Calculate" class="btn"></td>
+                    <td><input type="reset" value="Reset Fields" class="btn"></td>
+                </tr>
+            </table>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
