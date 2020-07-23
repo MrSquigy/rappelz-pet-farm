@@ -51,7 +51,7 @@ document.onreadystatechange = () => {
         const passType = (usePremium === true) ? " premium" : " normal";
         const ender = (useCracker === true) ? " using crackers" : "";
         const result = calcPasses(startLvl, endLvl, stage, usePremium, useCracker);
-        const out = "It would take " + result.totalPasses + passType + " passes to level your s" + stage + " pet from " + startLvl + " to " + result.level + ender;
+        const out = "It would take " + result.totalPasses + passType + " passes (" + result.totalPasses / Math.max(1, stage) * 12 + " hours) to level your s" + stage + " pet from " + startLvl + " to " + result.level + ender;
         document.getElementById("result").innerHTML = out;
     };
 };
