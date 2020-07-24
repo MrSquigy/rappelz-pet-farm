@@ -29,6 +29,7 @@ input {
     color: white;
     border: 0;
     background-color: darkgray;
+    transition: background-color .3s ease-in-out;
 }
 
 .btn:hover {
