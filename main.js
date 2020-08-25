@@ -35,7 +35,7 @@ document.onreadystatechange = () => {
 
         let bonus = 1;
         if (usePremium === true) bonus += 3;
-        if (useCracker === true) bonus += 1;
+        if (useCracker === true) bonus *= 2;
 
         return exp * bonus;
     }
